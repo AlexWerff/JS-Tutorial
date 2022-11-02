@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <script src="./index.js"></script>
+  <script>
+    // This is Javascript in the HTML File (rather not recommended)
+    function onChangeClick(){
+        document.getElementById('sample-text').innerText = "Text has changed"
+    }
+  </script>
+
+  <body>
+    <p id="sample-text">
+        This is a sample text
+    </p>
+    <button onclick="onChangeClick()">Change the text</button>
+
+    <p>
+        Counter: <p id="counter-text"> 0 </p>
+    </p>
+    <button onclick="onIncrementCounter()">Increment Counter</button>
+
+    <p>
+        Counter(max 5): <p id="counter-text-max"> 0 </p>
+    </p>
+    <button onclick="onIncrementWithMax()">Increment Counter</button>
+  </body>
+</html>
